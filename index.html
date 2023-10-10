@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Ratia Town </title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto; 
+      }
+    }
+
+    .carousel img{
+       height: 900px;
+    }
+    #navbar{
+      background-color: rgb(71, 124, 124);
+      color: white;
+    }
+    /* #span1{
+      background-color: darkolivegreen;
+    }
+    #navbar1{
+      background-color: darkred;
+    } */
+  </style>
+  </head>
+  <body>
+    
+
+
+    <header id="navbar" class="text-gray-600 body-font border-gray-100 ">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg  " fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+              <!-- <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> -->
+              <path d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z"></path>
+            </svg>
+            <span  id="span1" style="color: white;" class="ml-3 text-xl">Ratia</span>
+          </a>
+          <nav id=" navbar1"  class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="about.html" class="mr-5 hover:text-gray-900">Development Team </a>
+            <a  href="place.html" class="mr-5 hover:text-gray-900">Places</a>
+            <a  href="history.html" class="mr-5 hover:text-gray-900">History</a>
+            <a  href="religious.html" class="mr-5 hover:text-gray-900">Religiious Places</a>
+            <a  href="market.html" class="mr-5 hover:text-gray-900">Market Committee</a>
+            <a  href="school.html" class="mr-5 hover:text-gray-900">Schools and Colleges</a>
+            <a  href="contact.html" class="mr-5 hover:text-gray-900">Contact Us</a>
+            
+          </nav>
+          <button style="margin-bottom: 20px;color: black;"  class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-400 rounded text-base mt-4 md:mt-0">Join Us
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img1.png" class="d-block w-100" alt="error">
+          </div>
+          <div class="carousel-item">
+            <img src="img2.jpg" class="d-block w-100" alt="error">
+          </div>
+          <div class="carousel-item">
+            <img src="img3.jpg" class="d-block w-100" alt="error">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+
+
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light" style="font-size: 30px;"><b>Ratia</b></h1>
+            <p class="lead text-muted">According to Census 2011 information the location code or village code of Ratia village is 125051. Ratia village is located in Fatehabad Tehsil of Fatehabad district in Haryana, India.The Ratia Municipal Committee has population of 37,852 of which 19,937 are males while 17,915 are females. Population of Children with age of 0-6 is 4683 which is 12.60% of total population of Ratia (MC). Female Sex Ratio is of 911 against state average of 879. Moreover, Child Sex Ratio in Ratia is around 846 compared to Haryana state average of 834.Literacy rate of Ratia city is 72.89% lower than state average of 75.55%.Male literacy is around 78.28% while female literacy rate is 67.04%. Jindal family originated from Budhlada lives here since 19th century.</p>
+            
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 rounded overflow-hidden">
+              <div class="w-24 h-full bg-yellow-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0"> Places In Ratia</h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="img4.jpg">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Gurdwara Sahib</h2>
+              <p class="text-base leading-relaxed mt-2">A gurdwara (gurdwārā; meaning "door to the guru") is a place of assembly and worship for Sikhs. Sikhs also refer to gurdwaras as Gurdwara Sahib. People from all faiths are welcomed in gurdwaras. Each gurdwara has a Darbar Sahib where the current and everlasting guru of the Sikhs.</p>
+              <a  href="https://www.facebook.com/Baba-Vishvkarma-Gurdwara-Ratia-102312704864164/" class="text-yellow-500 inline-flex items-center mt-3">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="img5.jpeg">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Police Station Ratia</h2>
+              <p class="text-base leading-relaxed mt-2">Police stations in India have a designated area under their jurisdiction. Police stations are headed by a station house officer (SHO) who may be of inspector or sub-inspector rank, assisted by an assistant sub-inspector, head constables, and constables. </p>
+              <a href="https://fatehabad.haryanapolice.gov.in/template/contact.pdf"  class="text-yellow-500 inline-flex items-center mt-3">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="img6.jpg">
+              </div>
+              <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Hanuman Mandir</h2>
+              <p class="text-base leading-relaxed mt-2">One of Ratia's oldest temples, the Hanuman Temple (Hanuman Mandir) is notable for its large statue of the monkey god Hanuman. It was built in the 16th century by Maharaja Man Singh of Amber, while much of India was under the Mughal Empire. The crescent atop the temple’s</p>
+              <a href="http://www.onefivenine.com/india/Listing/Town/temples/Fatehabad/Ratia"  class="text-yellow-500 inline-flex items-center mt-3">Learn More
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="font-small mdb-color darken-3 pt-4">
+        <div class="container">
+            <h1 style="text-align: center; font-size: 30px; margin-bottom: 15px;">Ratia On Youtube</h1>
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+      
+            <div class="col-md-4">
+              <div class="embed-responsive embed-responsive-16by9 mb-4 video">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fIYZSLSbSAw"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9 mb-4 video">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uP-J60HUmPk"
+                      allowfullscreen></iframe>
+                      
+                  </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9 mb-4 video">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YLh9fwr9XIA"
+                      allowfullscreen></iframe>
+                      
+                  </div>
+            </div>
+          </div>
+      
+        </div>  
+        </section>
+
+
+      
+
+      <footer class="page-footer font-small mdb-color pt-4" style="font-size: 18px; margin-top: 23px; color: honeydew; background-color: #1d1b1b;">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Footer links -->
+          <div class="row text-center text-md-left mt-3 pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Ratia.com</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quaerat aliquam nihil modi debitis architecto delectus quia asperiores consequuntur! Id?.</p>
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="w-100 clearfix d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Quick Links</h6>
+              <p>
+                <a href="https://in.placedigger.com/ratia-library2069352752.html">Libraries</a>
+              </p>
+              <p>
+                <a href="https://www.facebook.com/cityhulchal/">Social Media</a>
+              </p>
+              <p>
+                <a href="https://www.indiamart.com/the-artist-gallery/">Gallery</a>
+              </p>
+              <p>
+                <a href="https://www.cybo.com/IN/ratia/fitness-centers/">Sports Club</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="w-100 clearfix d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+              <p>
+                <a href="https://www.facebook.com/">Your Account</a>
+              </p>
+              <p>
+                <a href="https://tikshare.com/market-committee-rattia-1394349">Committee</a>
+              </p>
+              <p>
+                <a href="#!">Teachers</a>
+              </p>
+              <p>
+                <a href="https://www.townscript.com/in/ratia/near-you">Events</a>
+              </p>
+            </div>
+      
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <i class="fas fa-home mr-3"></i> Providence, RI 02411, Ratia</p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> help@ratia.com</p>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 11 454 597 88</p>
+              <p>
+                <i class="fas fa-print mr-3"></i> + 11 254 518 39</p>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Footer links -->
+      
+          <hr>
+      
+          <!-- Grid row -->
+          <div class="row d-flex align-items-center">
+      
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+      
+              <!--Copyright-->
+              <p class="text-center text-md-left">© 2020 Copyright:
+                <a href="">
+                  <strong>Ratia Town</strong>
+                </a>
+              </p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+      
+              <!-- Social buttons -->
+              <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/" class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.twitter.com/" class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.google.com/" class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/home/?originalSubdomain=in" class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
